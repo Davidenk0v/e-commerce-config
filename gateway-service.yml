@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: API-Gateway
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: product
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/v1/**
+        - id: cart
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/v1/**
+
