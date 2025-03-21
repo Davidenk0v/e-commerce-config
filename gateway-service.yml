@@ -14,9 +14,9 @@ spring:
         - id: product
           uri: http://localhost:8082
           predicates:
-            - Path=/api/v1/**
+            - Path=/api/v1/product/**
         - id: cart
           uri: http://localhost:8084
           predicates:
-            - Path=/api/v1/**
+            - Path=/api/v1/cart/**
 
