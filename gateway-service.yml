@@ -11,12 +11,12 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: cart-service
-          uri: lb://cart-service
+        - id: CART-SERVICE
+          uri: lb://CART-SERVICE
           predicates:
             - Path=/api/v1/cart/**
-        - id: product-service
-          uri: lb://product-service
+        - id: PRODUCT-SERVICE
+          uri: lb://PRODUCT-SERVICE
           predicates:
             - Path=/api/v1/product/**
 
