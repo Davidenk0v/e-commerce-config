@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: cart-service
+    name: CART-SERVICE
 
   datasource:
     url: jdbc:postgresql://localhost:5434/cart
